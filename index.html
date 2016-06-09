@@ -1,1 +1,9 @@
-
+<html>
+  <body>
+    <script>
+      (function (loc){
+        loc.protocol != 'https:' && (loc.href = 'https:' + loc.href.substring(loc.protocol.length));
+      })(window.location);
+    </script>
+  </body>
+</html>
